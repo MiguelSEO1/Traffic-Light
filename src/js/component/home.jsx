@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect } from "react";
 import Light from "./lights";
 
 //create your first component
@@ -49,7 +49,7 @@ const Home = () => {
 		      <button className="btn btn-primary m-3" onClick={() => {
 				lightUp == 2 ? setLightUp(0) : setLightUp(lightUp +1)
 			  }}>Traffic Lights</button>
-			  <button className={`btn ${running ? "bg-danger" : "bg-success"} m-3` } onClick={() => setRunning(!running)}>{running ? "Stop" : "Start"}
+			  <button className={`btn ${running ? "btn-danger" : "btn-success"} m-3` } onClick={() => setRunning(!running)}>{running ? "Stop" : "Start"}
               </button>
 		</div>      
 	);
