@@ -50,7 +50,7 @@ const Home = () => {
 				lightUp == 2 ? setLightUp(0) : setLightUp(lightUp +1)
 			  }}>Traffic Lights</button>
 			  <button className={`btn ${running ? "btn-danger" : "btn-success"} m-3` } onClick={() => setRunning(!running)}>{running ? "Stop" : "Start"}
-              </button>
+                      </button>
 		</div>      
 	);
      
