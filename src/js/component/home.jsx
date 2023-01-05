@@ -1,4 +1,4 @@
-import React, {useState, useEffect } from "react";
+import React, {useState, useEffect} from "react";
 import Light from "./lights";
 
 //create your first component
@@ -57,5 +57,4 @@ const Home = () => {
 			}
 
 export default Home;
-
 
