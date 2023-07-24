@@ -1,22 +1,41 @@
 
-.trafficlight {
-
-height: 550px;
-width: 250px;
-background-color: black;
-margin: auto;
-margin-top: 50px;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-
+.paloSemaforo {
+  height: 400px; /* Altura del palo */
+  width: 10px;
+  background-color: rgb(7, 7, 7); /* Color del palo */
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
+.cajaSemaforo {
+  width: 150px;
+  height: 400px; /* Altura de la caja del semáforo */
+  background-color: black;
+  margin: auto;
+  position: relative;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
 
-.light {
-height: 150px;
-width: 150px;
-margin: auto;
-border-radius: 50%;
+.luzSemaforo {
+  height: 100px; /* Altura de las luces del semáforo */
+  width: 100px; /* Ancho de las luces del semáforo */
+  border-radius: 50%;
+  box-shadow: 0 0 30px rgb(230, 228, 228); /* Sombra */
+  margin: 5px;
+}
+
+.withBackground {
+  height: 100vh;
+  background-position: center 1%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
