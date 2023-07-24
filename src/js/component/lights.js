@@ -1,14 +1,14 @@
-import React, {useState} from "react";
+import React from "react";
 
-
-//create your first component
-const Light = ({light, index, color, click}) => {
-	
-    return (
-
-		<div className={`light alert ${light == index ? "bg" : "alert"}-${color}`} onClick={() => {click(index)}}/>
-		
-	);
+const Lights = ({ index, lucesSemaforo, element, setLucesSemaforo }) => {
+  return (
+    <div
+      className={`luzSemaforo ${
+        lucesSemaforo === index ? `bg-${element}` : " "
+      }`}
+      onClick={() => setLucesSemaforo(index)}
+    ></div>
+  );
 };
 
-export default Light;
+export default Lights;
