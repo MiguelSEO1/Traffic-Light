@@ -6,6 +6,7 @@ const Lights = ({
   element,
   setLucesSemaforo,
   setOff,
+  setRunnig
 }) => {
   return (
     <div
@@ -13,6 +14,7 @@ const Lights = ({
         lucesSemaforo === index ? `bg-${element}` : " "
       }`}
       onClick={() => {
+        setRunnig(false);
         setOff(false);
         setLucesSemaforo(index);
       }}
