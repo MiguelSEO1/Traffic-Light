@@ -47,3 +47,9 @@
 .btn {
   box-shadow: 0 0 30px rgb(13, 13, 13); /* Sombra */
 }
+
+.on {
+box-shadow: 0 0 50px rgb(242, 255, 7); /* Sombra */
+border: 2px solid #b8b508;
+
+}
