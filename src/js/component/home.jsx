@@ -46,7 +46,6 @@ const Home = () => {
                 element={e}
                 setLucesSemaforo={setLucesSemaforo}
                 setOff={setOff}
-                indiceSecuencia={indiceSecuencia}
               />
             );
           })}
