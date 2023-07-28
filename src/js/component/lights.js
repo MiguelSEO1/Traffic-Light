@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const Lights = ({
   index,
@@ -6,8 +6,15 @@ const Lights = ({
   element,
   setLucesSemaforo,
   setOff,
-  setRunnig
+  setRunnig,
+  setIndiceSecuencia,
+  off
+
+  
 }) => {
+
+  
+  
   return (
     <div
       className={`luzSemaforo ${
@@ -15,8 +22,14 @@ const Lights = ({
       }`}
       onClick={() => {
         setRunnig(false);
-        setOff(false);
-        setLucesSemaforo(index);
+        if(!off){
+          setOff(false)
+          setLucesSemaforo(index);
+          setIndiceSecuencia(index)
+        }
+        
+        
+        
       }}
     ></div>
   );
