@@ -1,12 +1,21 @@
 import React from "react";
 
-const Lights = ({ index, lucesSemaforo, element, setLucesSemaforo }) => {
+const Lights = ({
+  index,
+  lucesSemaforo,
+  element,
+  setLucesSemaforo,
+  setOff,
+}) => {
   return (
     <div
       className={`luzSemaforo ${
         lucesSemaforo === index ? `bg-${element}` : " "
       }`}
-      onClick={() => setLucesSemaforo(index)}
+      onClick={() => {
+        setOff(false);
+        setLucesSemaforo(index);
+      }}
     ></div>
   );
 };
