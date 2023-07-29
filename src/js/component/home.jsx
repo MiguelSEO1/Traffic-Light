@@ -27,17 +27,17 @@ const Home = () => {
     if (running && ! off) {
       if(indiceSecuencia == 0){
         setLucesSemaforo(indiceSecuencia)
-        intervalId = setInterval(() => {
+        intervalId = setTimeout(() => {
           setIndiceSecuencia((index) => (index + 1) % coloresSemaforo.length);
         }, 1000);
       }else{
-        intervalId = setInterval(() => {
+        intervalId = setTimeout(() => {
           setLucesSemaforo((index) => (index + 1) % coloresSemaforo.length);
         }, 1000);
       }
       
     }
-    return () => clearInterval(intervalId);
+    return () => clearTimeout(intervalId);
   }, [running, lucesSemaforo, indiceSecuencia]);
 
   useEffect(() => {
